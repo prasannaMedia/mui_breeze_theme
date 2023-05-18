@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="496" height="150" fill="none" xmlns:v="https://vecta.io/nano">
+  <path fill="url(#A)" d="M0 0h496v150H0z" />
+  <defs>
+    <pattern id="A" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlinkHref="#B" transform="scale(.00201613 .00666667)" />
+    </pattern>
+    <image id="B" width="496" height="150" xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfAAAACWCAYAAAAhdtoVAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAJq5JREFUeNrsnQuUXEWZx6vn/UhCSCZoECYJkCCgJwMbnrL4ADmLcFj2sCzKUViQXREQhANHFBaEQzzZxRUJopyzIUhcUIy6wopRILxMCAssTI4LmIRHJoEQYSaSSaYn8+ztf3Wqp2513Xvrdt/uuT3z/3naDN331q1bt2796/uq6ishCCGEEFJ1pPB/G1/fnGFREEIIIdXBgkPmpurUf8w/eA5LhBBCCEk4m97okv/WsCgIIYSQ6oMCTgghhFDACSGEEEIBJ4QQQggFnBBCCKGAE0IIIYQCTgghhBAKOCGEEEIBJ4QQQggFnBBCCCEUcEIIIYQCTgghhBAKOCGEEEIo4IQQQgihgBNCCCEUcEIIIYRQwAkhhBBCASeEEEIo4IQQQgihgBNCCCGEAk4IIYRQwAkhhBBCASeEEEIIBZwQQgiZpNSVM/GRkRHR19fHUg4gk8kkMl+tra2irq6OD4gQQijg1StmE0mYXWlqaqKAE0LIZBVwkEqlnAXP9VhSfvgsCCEk2XAMnNY3IYQQCjghhBBCJo2A02IlhBBCaIETQgghFHBa34QQQggFnOJNCCGExMC4LfRNkngjL8PDwxW5X6yt5hItQgghVSfgSRLuoaEhsWfPHtHY0CBqasrsjNgr2rjmwMCADJRSX1/PGkgIISSZAp5UN/ng4KC0hA866KCKRxyDtb9t2zaZh

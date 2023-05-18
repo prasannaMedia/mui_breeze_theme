@@ -32,7 +32,38 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+.shadow {
+  height: 2800px;
+  background-image: url("./assest/breeze-1-15bce451c922ccf07c8d5f12d01727c8.png");
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  background-repeat: no-repeat, repeat;
+
+  transform: skew(10deg);
+  z-index: 10;
+  opacity: 1;
+  /* opacity: 0.1; */
+}
+
+
+@media (max-width: 960px) {
+  .shadow {
+    display: none; /* Hide on medium screens */
+  }
+}
+
+
+/* Media query for small-sized screens */
+@media (max-width: 600px) {
+  .shadow {
+    display: none; /* Hide on small screens */
   }
 }

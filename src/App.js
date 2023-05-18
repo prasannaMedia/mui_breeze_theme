@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Home from "./components/Home/Home";
+import { About } from "./components/About/About";
+import { Pricing } from "./components/Pricing/Pricing";
+import { Info } from "./components/Info/Info";
+import { Footer } from "./components/Footer/Footer";
+import { createTheme, ThemeProvider } from "@mui/material";
+
+const theme = createTheme({
+  typography: {
+    fontFamily: "Roboto, sans-serif", // Replace 'Roboto' with your desired sans-serif font
+  },
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        <div className="shadow"></div>
+        <Home />
+        <About />
+        <Pricing />
+        <Info />
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }
 
