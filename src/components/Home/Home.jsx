@@ -45,6 +45,7 @@ const Home = () => {
                 variant="h4"
                 color={theme.palette.text.primary}
                 component="h4"
+                mb={2}
               >
                 Get website audit report in a click with Breeze application
               </Typography>
@@ -52,7 +53,7 @@ const Home = () => {
                 Breeze avails you detailed audit behind website pages within few
                 steps.
               </Typography>
-              <Box display="flex" mt={5}>
+              <Box display="flex" mt={10}>
                 <Button
                   variant="contained"
                   sx={{
@@ -77,16 +78,16 @@ const Home = () => {
           xs={12}
           md={6}
           sx={{
-            display: { xs: "none", md: "block" },
-            position: "relative",
-            transform: { xs: "none", md: "skewX(-14deg)" },
+            // display: { xs: "none", md: "block" },
+            // position: "relative",
+            transform: { xs: "none", md: "skewX(-11deg)" },
             marginLeft: { xs: 0, md: "-50px" },
           }}
         >
           <Box
             sx={{
               backgroundColor: "#0963e8",
-              height: "420px",
+              height: "100%",
               borderRightColor: "transparent",
               zIndex: 1,
             }}
@@ -94,23 +95,32 @@ const Home = () => {
             <Box
               p={3}
               sx={{
-                transform: { xs: "none", md: "skewX(14deg)" },
+                transform: { xs: "none", md: "skewX(11deg)" },
               }}
             >
               <Box display="flex" justifyContent="end">
-                <Svg type="logout" />
+                <Box sx={{ display: { xs: "none", md: "block" } }}>
+                  <Svg type="logout" />
+                </Box>
                 <Button
                   variant="contained"
                   sx={{
                     backgroundColor: theme.palette.secondary.main,
                     color: theme.palette.text.secondary,
                     marginLeft: "30px",
+                    display: { xs: "none", md: "block" },
                   }}
                 >
                   Request Demo
                 </Button>
               </Box>
-              <Box pl={10} pt={3}>
+              <Box
+                sx={{
+                  marginLeft: { xs: "0px", md: "100px" },
+                }}
+                pt={3}
+                justifyContent={"end"}
+              >
                 <img
                   src={auditImg}
                   alt="Audit"

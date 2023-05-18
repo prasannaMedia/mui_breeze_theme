@@ -1,9 +1,10 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import auditImg from "../../assest/page-audit.svg";
 import { Svg } from "../svg/Svg";
 import rightImg from "../../assest/right.png";
 import plusImg from "../../assest/plus.png";
+import RemoveIcon from "@mui/icons-material/Remove";
 
 import workspaceImg from "../../assest/workspace.svg";
 export const Info = () => {
@@ -29,23 +30,34 @@ export const Info = () => {
     },
   ];
 
-  const qaData = [
+  const [qaData, setQaData] = useState([
     {
       id: 1,
       question: "Which is the best tool for website audit?",
-      ans: "Breeze is one of the best tools for website audit report. You can avail it for free in a beginner plan.            ",
+      ans: "Breeze is one of the best tools for website audit report. You can avail it for free in a beginner plan",
+      open: true,
     },
     {
       id: 2,
       question: "What is website audit report? ",
-      ans: "",
+      ans: "2Breeze is one of the best tools for website audit report. You can avail it for free in a beginner plan",
+      open: false,
     },
     {
       id: 3,
       question: "Can I download the webpage audit report? ",
-      ans: "",
+      ans: "3Breeze is one of the best tools for website audit report. You can avail it for free in a beginner plan",
+      open: false,
     },
-  ];
+  ]);
+
+  const handleCollapse = (id) => {
+    setQaData((prevData) =>
+      prevData.map((item) =>
+        item.id === id ? { ...item, open: !item.open } : item
+      )
+    );
+  };
 
   return (
     <Box m={10} mb={2}>
@@ -112,31 +124,46 @@ export const Info = () => {
           mt={2}
           sx={{ background: "white" }}
         >
-          {qaData.map((item, index) => (
+          {qaData.map((item) => (
             <Box
-              key={index}
+              key={item.id}
               display="flex"
               alignItems="flex-start"
               mb={5}
               sx={{
                 borderBottom: "1px solid #d0d6df",
                 padding: "10px",
-                position: "relative", // Add position: relative
+                position: "relative",
               }}
             >
-              <Box
-                component="img"
-                mr={2}
-                src={plusImg}
-                sx={{ height: "20px", width: "20px" }}
-              />
+              {item.open ? (
+                <RemoveIcon
+                  sx={{ color: "green" }}
+                  onClick={() => {
+                    handleCollapse(item.id);
+                  }}
+                />
+              ) : (
+                <Box
+                  component="img"
+                  mr={2}
+                  src={plusImg}
+                  sx={{ height: "20px", width: "20px" }}
+                  onClick={() => {
+                    handleCollapse(item.id);
+                  }}
+                />
+              )}
+
               <Box textAlign="left">
                 <Typography mb={1} fontSize={16} fontWeight={500}>
                   {item.question}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {item.ans}
-                </Typography>
+                {item.open && ( // Display details only when item.open is true
+                  <Typography variant="body2" color="text.secondary">
+                    {item.ans}
+                  </Typography>
+                )}
               </Box>
             </Box>
           ))}
@@ -144,10 +171,14 @@ export const Info = () => {
       </Box>
 
       <Box mt={5}>
-        <Grid container>
-          <Grid item xs={12} md={6} textAlign={"left"} mt={20}>
+        <Grid container spacing={10}>
+          <Grid item xs={12} md={6} textAlign={"left"} mt={15}>
             <Box mb={2}>
-              <Typography variant="h5" color={"text.secondary"}>
+              <Typography
+                variant="h5"
+                fontWeight={500}
+                color={"text.secondary"}
+              >
                 Sign up to
               </Typography>
               <Typography variant="h5">The Breeze Web App </Typography>
@@ -179,7 +210,7 @@ export const Info = () => {
         </Grid>
       </Box>
       <Box mt={5} display={"flex"} alignItems={"end"} sx={{ height: "100%" }}>
-        <Typography variant="body2">Breeze  /  Product  /  Page Audit</Typography>
+        <Typography variant="body2">Breeze | Product | Page Audit</Typography>
       </Box>
     </Box>
   );

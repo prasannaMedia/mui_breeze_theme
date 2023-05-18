@@ -48,7 +48,6 @@
   background-repeat: no-repeat, repeat;
 
   transform: skew(10deg);
-  z-index: 10;
   opacity: 1;
   /* opacity: 0.1; */
 }

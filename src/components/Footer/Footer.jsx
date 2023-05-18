@@ -28,10 +28,12 @@ export const Footer = () => {
       <Box sx={{ borderBottom: "1px solid #3f4a5c" }} p={4}>
         <Grid container spacing={10}>
           <Grid item md={4} xs={12}>
-            <Typography variant="h6">Features</Typography>
+            <Typography variant="h6" mb={2}>
+              Features
+            </Typography>
 
-            <Box display={"flex"} justifyContent={"space-between"}>
-              <Box display={"flex"} flexDirection={"column"}>
+            <Box display={"flex"}>
+              <Box display={"flex"} flexDirection={"column"} mr={5} gap={1}>
                 <Typography variant="subtitle2" color="GrayText">
                   Cookie & Cache{" "}
                 </Typography>
@@ -54,7 +56,7 @@ export const Footer = () => {
                   Media{" "}
                 </Typography>
               </Box>
-              <Box display={"flex"} flexDirection={"column"}>
+              <Box display={"flex"} flexDirection={"column"} gap={1}>
                 <Typography variant="subtitle2" color="GrayText">
                   Environment
                 </Typography>
@@ -70,13 +72,21 @@ export const Footer = () => {
                 <Typography variant="subtitle2" color="GrayText">
                   Team Sharing
                 </Typography>
+                <Typography variant="subtitle2" color="GrayText">
+                  Page Manager
+                </Typography>
+                <Typography variant="subtitle2" color="GrayText">
+                  Checklist
+                </Typography>
               </Box>
             </Box>
           </Grid>
 
           <Grid item md={4} xs={12}>
-            <Typography variant="h6">Company</Typography>
-            <Box display={"flex"} flexDirection={"column"}>
+            <Typography variant="h6" mb={2}>
+              Company
+            </Typography>
+            <Box display={"flex"} flexDirection={"column"} gap={1}>
               <Typography variant="subtitle2" color="GrayText">
                 About Us
               </Typography>
@@ -92,8 +102,12 @@ export const Footer = () => {
             </Box>
           </Grid>
           <Grid item md={3} xs={12}>
-            <Box display={"flex"} flexDirection={"column"}>
-              <Box component={"img"} src={googleChromeImg}></Box>
+            <Box display={"flex"} flexDirection={"column"} gap={2}>
+              <Box
+                component={"img"}
+                src={googleChromeImg}
+                sx={{ height: "50%", width: "50%", objectFit: "cover" }}
+              ></Box>
               <Typography variant="h6">Check out our 9 reviews</Typography>
               <Rating
                 count={5}
