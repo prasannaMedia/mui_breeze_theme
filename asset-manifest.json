@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/mui_breeze_theme/static/css/main.17fae5ea.css",
+    "main.js": "/mui_breeze_theme/static/js/main.8e1f12a1.js",
+    "static/js/787.dc7c5dce.chunk.js": "/mui_breeze_theme/static/js/787.dc7c5dce.chunk.js",
+    "static/media/workspace.svg": "/mui_breeze_theme/static/media/workspace.557903050892bdf76cac5ea7e300d98f.svg",
+    "static/media/page-audit.svg": "/mui_breeze_theme/static/media/page-audit.320d39ef55041b47f7bccca4a3391afe.svg",
+    "static/media/breeze-1-png": "/mui_breeze_theme/static/media/breeze-1-15bce451c922ccf07c8d5f12d01727c8.15bce451c922ccf07c8d.png",
+    "static/media/breeze-logo (1).svg": "/mui_breeze_theme/static/media/breeze-logo (1).73a070d8713283c5c77e90d239e8e712.svg",
+    "index.html": "/mui_breeze_theme/index.html",
+    "main.17fae5ea.css.map": "/mui_breeze_theme/static/css/main.17fae5ea.css.map",
+    "main.8e1f12a1.js.map": "/mui_breeze_theme/static/js/main.8e1f12a1.js.map",
+    "787.dc7c5dce.chunk.js.map": "/mui_breeze_theme/static/js/787.dc7c5dce.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.17fae5ea.css",
+    "static/js/main.8e1f12a1.js"
+  ]
+}
