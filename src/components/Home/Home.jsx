@@ -80,7 +80,7 @@ const Home = () => {
           sx={{
             // display: { xs: "none", md: "block" },
             // position: "relative",
-            transform: { xs: "none", md: "skewX(-11deg)" },
+            transform: { xs: "none", md: "skewX(-8deg)" },
             marginLeft: { xs: 0, md: "-50px" },
           }}
         >
@@ -95,7 +95,7 @@ const Home = () => {
             <Box
               p={3}
               sx={{
-                transform: { xs: "none", md: "skewX(11deg)" },
+                transform: { xs: "none", md: "skewX(8deg)" },
               }}
             >
               <Box display="flex" justifyContent="end">
