@@ -47,7 +47,7 @@
   width: 100%;
   background-repeat: no-repeat, repeat;
 
-  transform: skew(10deg);
+  /* transform: skew(10deg); */
   opacity: 1;
   /* opacity: 0.1; */
 }
